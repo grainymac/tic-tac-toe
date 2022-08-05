@@ -1,22 +1,100 @@
 /* -------------------------- TAGS SECTION */
+main {
+    background-color: #B36344;
+    font-family: 'bangersregular';
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 {
+    font-family: 'bangersregular';
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+
+}
+
+table {
+    border: 10px solid;
+    border-color: #32B39D;
+}
+
+td {
+    width: 130px;
+    height: 130px;
+    background-color: #7AFFE9;
+}
+
+input {
+    width: 130px;
+    height: 130px;
+}
+
+/* -------------------------- PLAYER ONE SECTION */
+.player-one-section {
+    background-color:lightsalmon;
+    padding: 0px 20px 0px 20px;
+    width: 300px;
+    border: 5px dotted;
+    border-color: bisque;
+}
+
+.player-one-title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.player-one-img {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
 
 
+/* -------------------------- GAME BOARD SECTION */
 
+/* -------------------------- PLAYER TWO SECTION */
+.player-two-section {
+    background-color:lightsalmon;
+    padding: 0px 20px 0px 20px;
+    width: 300px;
+    border: 5px dotted;
+    border-color: bisque;
+}
 
+.player-two-title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
 
+/* -------------------------- FOOTER SECTION */
+.footer-section {
+    display: flex;
+    justify-content: center;
+}
+.reset-btn {
+    font-family: 'bangersregular';
+    font-size: 20px;
+    background-color: lightgray;
+    margin: 20px;
+    height: 50px;
+    width: 110px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* -------------------------- UTILITIES */
+* {
+    background-color: #FFA07A;
+}
+@font-face {
+    font-family: 'bangersregular';
+    src: url('/Users/ianmcintosh/tic-tac-toe/fonts/bangers-regular-webfont.woff2') format('woff2'),
+         url('/Users/ianmcintosh/tic-tac-toe/fonts/bangers-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;

@@ -1,12 +1,43 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <title></title>
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <h1>Tic-Tac-Toe</h1>
     <main>
+      <section class="player-one-section">
+        <h2 class="player-one-title">PLAYER 1</h2>
+        <img src="assets/playerOne.gif" class="player-one-img">
+        <p></p>
+      </section>
+      <section>
+        <table>
+          <tr>
+            <td><input type="text" id="a1" onclick="" readonly></td>
+            <td><input type="text" id="a2" onclick="" readonly></td>
+            <td><input type="text" id="a3" onclick="" readonly></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="b1" onclick="" readonly></td>
+            <td><input type="text" id="b2" onclick="" readonly></td>
+            <td><input type="text" id="b3" onclick="" readonly></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="c1" onclick="" readonly></td>
+            <td><input type="text" id="c2" onclick="" readonly></td>
+            <td><input type="text" id="c3" onclick="" readonly></td>
+          </tr>
+        </table>
+      </section>
+      <section class="player-two-section">
+        <h2 class="player-two-title">PLAYER 2</h2>
+      </section>
     </main>
+    <section class="footer-section">
+      <button class="reset-btn" onclick="resetGame()" hidden>reset game</button>
+    </section>
     <script src="main.js"></script>
     <script src="player.js"></script>
     <script src="game.js"></script>
