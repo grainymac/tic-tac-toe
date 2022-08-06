@@ -6,7 +6,7 @@ main {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
-    gap: 10px;
+    gap: 60px;
 }
 
 h1 {
@@ -18,27 +18,11 @@ h1 {
 
 }
 
-table {
-    border: 10px solid;
-    border-color: #32B39D;
-}
-
-td {
-    width: 130px;
-    height: 130px;
-    background-color: #7AFFE9;
-}
-
-input {
-    width: 130px;
-    height: 130px;
-}
-
 /* -------------------------- PLAYER ONE SECTION */
 .player-one-section {
     background-color:lightsalmon;
     padding: 0px 20px 0px 20px;
-    width: 300px;
+    width: 250px;
     border: 5px dotted;
     border-color: bisque;
 }
@@ -57,12 +41,32 @@ input {
 
 
 /* -------------------------- GAME BOARD SECTION */
+.game-board-section {
+    display: flex;
+}
+
+.game-board {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+}
+
+.cell {
+    font-family: 'bangersregular';
+    width: 130px;
+    height: 130px;
+    border: 4px solid #32B39D;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
 
 /* -------------------------- PLAYER TWO SECTION */
 .player-two-section {
     background-color:lightsalmon;
     padding: 0px 20px 0px 20px;
-    width: 300px;
+    width: 250px;
     border: 5px dotted;
     border-color: bisque;
 }
@@ -78,6 +82,7 @@ input {
     display: flex;
     justify-content: center;
 }
+
 .reset-btn {
     font-family: 'bangersregular';
     font-size: 20px;
