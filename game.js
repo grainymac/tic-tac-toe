@@ -4,7 +4,8 @@ class Game {
         this.playerTwo = new Player('two', '🔹');
         this.currentPlayer = this.playerOne;
         this.winner = '';
-        this.draw = false;
+        this.draw = '';
+        this.isDraw = false;
         this.theBoard = [];
         this.winningConditions = [
             [1, 2, 3],
@@ -46,7 +47,7 @@ class Game {
         } else if (onTheBoard.includes('3') && onTheBoard.includes('5') && onTheBoard.includes('7')) {
             incrementWins();
         } else if (this.theBoard.length === 9 && !this.winner) {
-            checkDraw();
+            checkIsDraw();
         }
     }
 }
