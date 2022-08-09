@@ -102,6 +102,11 @@ h1 {
 * {
     background-color: #FFA07A;
 }
+
+.no-click {
+    pointer-events: none;
+}
+
 @font-face {
     font-family: 'bangersregular';
     src: url('/Users/ianmcintosh/tic-tac-toe/fonts/bangers-regular-webfont.woff2') format('woff2'),

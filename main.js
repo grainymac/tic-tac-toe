@@ -1,7 +1,7 @@
 var game = new Game();
 
 // --------------------------------QUERY SELECTORS
-var box = document.querySelectorAll('.box');
+var boxes = document.querySelectorAll('.box');
 var gameBoard = document.querySelector('#game-board');
 var playerTurn = document.querySelector('#player-turn');
 var playerOneWins = document.querySelector('#player-one-wins');
@@ -11,20 +11,20 @@ var resetBtn = document.querySelector('#reset-btn');
 
 // --------------------------------EVENT LISTENERS
 resetBtn.addEventListener('click', reset);
-box.forEach(function(el) {el.addEventListener('click', chooseSquare)});
+boxes.forEach(function(element) {element.addEventListener('click', chooseSquare)});
 
 // --------------------------------FUNCTIONS
 function chooseSquare(event) {
-    if (checkBoardInfo()) {
+      checkBoardInfo(event);
       updateGameBoard(event);
       playerToken(event);
       game.boardPlay();
       switchTurn();
-    }
+    
 }
 
 function checkBoardInfo() {
-    if (game.currentPlayer.theBoard.length < 5 && !game.theBoard.includes(event.target.id) && event.target.id !== "") {
+    if (game.currentPlayer.theBoard.length < 5 && !game.theBoard.includes(event.target) && event.target !== '') {
       return true;
     } else {
       return false;
@@ -37,9 +37,9 @@ function updateGameBoard(event) {
 }
 
 function playerToken(event) {
-    for (var i = 0; i < box.length; i++) {
-      if (box[i].id === event.target.id) {
-        box[i].innerHTML = `${game.currentPlayer.token}`
+    for (var i = 0; i < boxes.length; i++) {
+      if (boxes[i].id === event.target.id) {
+        boxes[i].innerHTML = `${game.currentPlayer.token}`
       }
     }
 }
@@ -57,6 +57,7 @@ function checkGameBoard() {
     if (!game.winner && !game.draw) {
       return true;
     } else {
+      gameBoard.classList.add('no-click');
       return false;
     }
 }
@@ -88,15 +89,16 @@ function newTurn() {
 
 function reset() {
     game.draw = false;
-    game.winner = "";
+    game.winner = '';
+    gameBoard.classList.remove('no-click');
     switchTurn();
     refreshGameInfo();
 }
 
 function refreshGameInfo() {
-    // for (var i = 0; i < box.length; i++) {
-    //   bpx[i].innerHTML = "";
-    // }
+    for (var i = 0; i < boxes.length; i++) {
+      boxes[i].innerHTML = '';
+    }
     game.playerOne.theBoard = [];
     game.playerTwo.theBoard = [];
     game.theBoard = [];
