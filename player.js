@@ -2,11 +2,7 @@ class Player {
   constructor(playerId, playerToken) {
     this.id = playerId;
     this.token = playerToken;
-    this.wins = [];
+    this.wins = 0;
+    this.theBoard = [];
   }
 }
-//   increaseWins() {
-//     this.wins += 1;
-//     }    
-  
-// }
