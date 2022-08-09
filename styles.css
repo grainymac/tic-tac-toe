@@ -1,6 +1,6 @@
 /* -------------------------- TAGS SECTION */
 main {
-    background-color: #B36344;
+    background-color: #FF6E72;
     font-family: 'bangersregular';
     color: black;
     display: flex;
@@ -15,8 +15,7 @@ h1 {
     font-size: 60px;
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
-
+    margin-bottom: 5px;
 }
 
 /* -------------------------- PLAYER ONE + TWO SECTION */
@@ -28,7 +27,7 @@ h1 {
     padding: 0px 20px 0px 20px;
     width: 250px;
     border: 5px dotted;
-    border-color: bisque;
+    border-color: #94FFB0;
 }
 
 .player-one-title,
@@ -73,7 +72,7 @@ h1 {
     color: black;
     width: 130px;
     height: 130px;
-    border: 4px solid #32B39D;
+    border: 4px solid #61C4FF;
     cursor: pointer;
     line-height: 100px;
     font-size: 60px;
@@ -88,14 +87,20 @@ h1 {
     font-size: 20px;
 }
 
+.player-turn {
+    margin: 0px;
+}
+
 .reset-btn {
     font-family: 'bangersregular';
     font-size: 20px;
     color: black;
     background-color: lightgray;
-    margin: 20px;
+    margin: 10px;
     height: 50px;
     width: 110px;
+    outline-style: ridge;
+    outline-color: #61C4FF;
 }
 
 /* -------------------------- UTILITIES */
@@ -109,7 +114,7 @@ h1 {
 
 @font-face {
     font-family: 'bangersregular';
-    src: url('/Users/ianmcintosh/tic-tac-toe/fonts/bangers-regular-webfont.woff2') format('woff2'),
-         url('/Users/ianmcintosh/tic-tac-toe/fonts/bangers-regular-webfont.woff') format('woff');
+    src: url('/Users/ianmcintosh/tic-tac-toe/fonts/bangers-regular-webfont.woff2') format('woff2'), url('/Users/ianmcintosh/tic-tac-toe/fonts/bangers-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
