@@ -8,14 +8,6 @@ class Game {
         this.isDraw = false;
     }
 
-    playerChange() {
-        if (this.currentPlayer === this.playerOne) {
-            this.currentPlayer = this.playerTwo;
-        } else {
-            this.currentPlayer = this.playerOne;
-        }
-    }
-
     boardPlay() {
         if (this.currentPlayer.theBoard.includes('1') && this.currentPlayer.theBoard.includes('2') && this.currentPlayer.theBoard.includes('3')) {
             incrementWins();
@@ -35,6 +27,14 @@ class Game {
             incrementWins();
         } else if (this.theBoard.length === 9 && !this.winner) {
             checkIsDraw();
+        }
+    }
+
+    playerChange() {
+        if (this.currentPlayer === this.playerOne) {
+            this.currentPlayer = this.playerTwo;
+        } else {
+            this.currentPlayer = this.playerOne;
         }
     }
 }
