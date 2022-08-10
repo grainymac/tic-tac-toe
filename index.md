@@ -1,37 +1,50 @@
-## Welcome to GitHub Pages
+# Tic-Tac-Toe
 
-You can use the [editor on GitHub](https://github.com/grainymac/tic-tac-toe/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Overview
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Build a web application of the game: Tic-Tac-Toe.  This project should showcase my understanding and foundation on what I have learned in module 1 and beyond.
 
-### Markdown
+## Learning Goals
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- practice Dry code
+- Refactor more...and then again
+- iterators
+- class to class iterations
 
-```markdown
-Syntax highlighted code block
+## Screenshots of Project
 
-# Header 1
-## Header 2
-### Header 3
+<img width="1380" alt="Screen Shot 2022-08-09 at 1 34 23 PM" src="https://user-images.githubusercontent.com/106535343/183739707-bce152da-7c69-4ce4-ad80-bea9ced6fbab.png">
+<img width="1364" alt="Screen Shot 2022-08-09 at 1 34 56 PM" src="https://user-images.githubusercontent.com/106535343/183739697-000154a6-9e71-48f3-918f-60a04543eee3.png">
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## Contributers
 
-**Bold** and _Italic_ and `Code` text
+- [Ian McIntosh](https://github.com/grainymac)
 
-[Link](url) and ![Image](src)
-```
+## Project Manager
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- [Cassandra Torske](https://github.com/CassandraGoose)
 
-### Jekyll Themes
+## Project Overview & Deployed Project
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/grainymac/tic-tac-toe/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- [Tic-Tac-Toe](https://frontend.turing.edu/projects/module-1/tic-tac-toe-solo-v2.html)
 
-### Support or Contact
+### Personal Goals
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Functional application
+- DRY code
+- Commit more
+- Data model/ DOM manipulation
+
+### Summary
+
+- I started my project by designing my structure with the HTML.  I came up with a random colour scheme and then started building an idea of how my web application might look.  I started added classes to tags and making comments for id's for javascript use later on. Then started building my stylesheet.  After I got a good idea of what I wanted it to look like, I designed the pixel art characters and put them in the HTML.  I started working on the main.js file first adding my query selectors, event listeners and functions.  I then went over to developing my classes and started building the winning conditions for the game. 
+
+
+### Challenges
+
+- building the web application using the data model only.
+- class iterations
+- refreshing the DOM
+
+
